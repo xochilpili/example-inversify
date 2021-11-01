@@ -23,9 +23,8 @@ const appContainer = new Container({
   .inSingletonScope(); */
 
 appContainer.load(ProducerModule);
-
 appContainer
-  .bind<CompositeProducer>("CompositeProducer")
+  .bind<CompositeProducer>(COMPOSITE_TYPES.CompositeProducer)
   .to(CompositeProducer)
   .inSingletonScope();
 

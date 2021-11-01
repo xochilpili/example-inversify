@@ -3,6 +3,6 @@ export interface IProducer {
 }
 
 export interface ICompositeProducer {
-  specialProducer: IProducer;
+  defaultProducer: IProducer;
   protoProducer: IProducer;
 }
